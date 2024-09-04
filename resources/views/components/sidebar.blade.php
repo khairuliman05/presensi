@@ -14,21 +14,19 @@
             </li>
 
             <li class="nav-item ">
-                <a href="{{ route('users.index') }}" class="nav-link "><i class="fas fa-columns"></i>
+                <a href="{{ route('users.index') }}" class="nav-link ">
+                    <i class="fa-sharp fa-solid fa-user"></i>
                     <span>Users</span></a>
             </li>
-            {{-- <li class="nav-item ">
-                <a href="{{ route('users.index') }}" class="nav-link "><i class="fas fa-columns"></i>
-                    <span>Users</span></a>
-            </li> --}}
 
-            {{-- <li class="nav-item">
+            <li class="nav-item">
                 <a href="{{ route('companies.show', 1) }}" class="nav-link">
-                    <i class="fas fa-columns"></i>
+
+                    <i class="fa-solid fa-house-chimney"></i>
                     <span>Company</span>
                 </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a href="{{ route('attendances.index') }}" class="nav-link">
                     <i class="fas fa-columns"></i>
                     <span>Attendances</span>
