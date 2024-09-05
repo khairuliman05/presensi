@@ -1,0 +1,22 @@
+meta {
+  name: Create CheckOut
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url}}/checkout
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "latitude" : "63.236129",
+    "longitude" : "6.512229"
+   }
+}

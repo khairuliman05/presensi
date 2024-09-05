@@ -1,0 +1,22 @@
+meta {
+  name: Create CheckIn
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base_url}}/checkin
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "latitude" : "63.236129",
+    "longitude" : "6.412229"
+   }
+}

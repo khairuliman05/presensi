@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+
 use App\Models\User;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -34,5 +35,7 @@ class DatabaseSeeder extends Seeder
             'time_in' => '08:00',
             'time_out' => '17:00',
         ]);
+
+        $this->call(AttendanceSeedeer::class);
     }
 }

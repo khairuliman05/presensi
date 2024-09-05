@@ -1,0 +1,15 @@
+meta {
+  name: Is CheckIn
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{base_url}}/is-checkin
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
