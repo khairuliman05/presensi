@@ -2,9 +2,7 @@
 
 namespace Database\Seeders;
 
-
 use App\Models\User;
-
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -21,10 +19,10 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Irul',
             'email' => 'irul@gmail.com',
-            'password' => Hash::make('irul1234'),
+            'password' => Hash::make('12345678'),
         ]);
 
-        //data dummy for company
+        // data dummy for company
         \App\Models\Company::create([
             'name' => 'PT. FIC16',
             'email' => 'fic16@codewithbahri.com',
@@ -36,6 +34,9 @@ class DatabaseSeeder extends Seeder
             'time_out' => '17:00',
         ]);
 
-        $this->call(AttendanceSeedeer::class);
+        $this->call([
+            AttendanceSeeder::class,
+            PermissionSeeder::class,
+        ]);
     }
 }
